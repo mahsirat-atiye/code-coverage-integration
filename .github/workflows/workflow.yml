@@ -1,7 +1,7 @@
 name: CodeCov Tests
 
 on:
-  [push, pull_request]
+  pull_request
 
 jobs:
   test:
@@ -20,3 +20,5 @@ jobs:
           pytest --cov=./ --cov-report=xml
       - name: Upload Coverage to Codecov
         uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
