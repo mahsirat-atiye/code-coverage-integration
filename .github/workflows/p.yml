@@ -1,10 +1,7 @@
-name: CodeCov Tests
+name: CodeCov Tests in PR
 
 on:
-   push:
-       branches:
-         - dev
-         - master
+  pull_request
 
 jobs:
   test:
