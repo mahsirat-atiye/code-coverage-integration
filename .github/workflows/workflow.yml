@@ -2,7 +2,7 @@ name: CodeCov Tests
 
 on:
    push:
-       branches-ignore:
+       branches:
          - dev
          - master
 
